@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Row, Col, Flex } from 'antd'
 import { useTranslation } from 'react-i18next'
-import PhotoLightbox from 'src/components/PhotoLightbox'
+// import PhotoLightbox from 'src/components/PhotoLightbox'
 
 import Container from 'src/components/Container'
 import T from 'src/components/Typography'
@@ -15,7 +15,7 @@ import coupleBorderImage from 'src/assets/images/CoupleBorder.png'
 import coupleBorderLeftImage from 'src/assets/images/CoupleBorderLeft.png'
 import coupleBorderRightImage from 'src/assets/images/CoupleBorderRight.png'
 import coupleBorderBottomImage from 'src/assets/images/CoupleBorderBottom.png'
-import photos from './photos'
+// import photos from './photos'
 
 import * as S from './styled'
 
