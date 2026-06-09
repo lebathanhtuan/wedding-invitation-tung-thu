@@ -1,21 +1,4 @@
 export const vi = {
-  header: {
-    menu: {
-      overview: 'Tổng quan',
-      couple: 'Cặp đôi',
-      invitation: 'Lời mời',
-      loveStory: 'Chuyện tình yêu',
-      engagement: 'Đính hôn',
-      event: 'Sự kiện',
-    },
-    sidebar: {
-      designBy: 'Thiết kế bởi Chú Rể',
-    },
-    translate: {
-      vi: 'Việt',
-      en: 'Anh',
-    },
-  },
   name: {
     groom: 'Sơn Tùng',
     bride: 'Nguyệt Thu',
@@ -58,7 +41,7 @@ export const vi = {
     subTitle: 'ĐẾN DỰ BỮA TIỆC CHUNG VUI CÙNG GIA ĐÌNH CHÚNG TÔI TẠI',
     subRestaurant: 'Sảnh Paris - Tầng 2',
     restaurant: 'Trống Đồng Luxury',
-    address: 'Lô 2A12.2, Đường 2/9, Phường Hoà Cường, Thành Phố Đà Nẵng',
+    address: 'Lô 2A12.2, Đường 2/9, Phường Hoà Cường, TP. Đà Nẵng',
     time: 'VÀO LÚC 11 GIỜ 00',
     date: 'NGÀY',
     DD: '20',
@@ -103,11 +86,6 @@ export const vi = {
         'Cảm ơn và trân trọng tất cả! Mong rằng chúng mình sẽ được sống hạnh phúc từng ngày, từng giờ của hôm nay và về sau. Từ nay chúng ta đã về chung một nhà rồi!',
     },
   },
-  engagement: {
-    title: 'Lễ Dạm Ngõ của chúng mình!',
-    description: 'Tình yêu không phải là những lời thề non hẹn biển,',
-    subDescription: 'chỉ đơn giản là cùng nhau bình yên qua ngày.',
-  },
   event: {
     title: 'Sự kiện',
     subTitle: 'Quan trọng',
@@ -131,49 +109,13 @@ export const vi = {
     label1: 'Thân mời bạn tham gia bữa tiệc,',
     label2: 'đánh dấu ngày chúng mình về chung một nhà!',
   },
-  confirm: {
-    title: 'Xác nhận tham dự',
-    subTitle:
-      'Đám cưới sẽ trọn vẹn và ý nghĩa hơn khi có sự hiện diện và chúc phúc của bạn. Hãy xác nhận sự có mặt của mình để Tuấn & Ni chuẩn bị đón tiếp chu đáo nhất nha!',
-    name: 'Tên của bạn',
-    isAttend: 'Bạn sẽ tham dự chứ?',
-    yes: 'Có',
-    no: 'Không',
-    maybe: 'Có thể',
-    guestOf: 'Bạn là khách mời của ai?',
-    bride: 'Cô dâu',
-    groom: 'Chú rể',
-    wish: 'Lời chúc của bạn',
-    submit: 'Xác nhận',
-    description:
-      'Cảm ơn bạn vì đã trở thành một phần quan trọng trong ngày đặc biệt của tụi mình.',
-  },
   thanks: {
     title: 'Trân trọng',
     content:
       'Cảm ơn mọi người đã luôn đồng hành trong quá trình trưởng thành của Tùng và Thu, cũng đã là những người chứng kiến và ủng hộ câu chuyện tình yêu của đôi bạn trẻ. Hôn lễ này sẽ chỉ trở nên trọn vẹn khi nhận được những lời chúc phúc và đặc biệt là sự có mặt của mọi người trong ngày chung đôi của cô dâu và chú rể.',
   },
-  video: {
-    play: 'Phát',
-    pause: 'Dừng',
-    mute: 'Tắt âm',
-    unmute: 'Bật âm',
-    close: 'Đóng',
-  },
   common: {
     backToTop: 'Cuộn đến đầu trang',
     tooltip: 'Hãy bật âm thanh',
-  },
-  message: {
-    successTitle: 'Gửi thông tin thành công!',
-    successDescription:
-      'Cảm ơn bạn đã xác nhận tham dự đám cưới của chúng mình!',
-    errorTitle: 'Gửi thông tin thất bại!',
-    errorDescription: 'Có lỗi xảy ra, vui lòng thử lại sau!',
-    required: {
-      name: 'Bạn chưa nhập tên!',
-      isAttend: 'Bạn chưa chọn trạng thái tham dự!',
-      guestOf: 'Bạn chưa chọn khách mời của cô dâu hay chú rể!',
-    },
   },
 }

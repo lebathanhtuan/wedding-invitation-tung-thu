@@ -312,30 +312,30 @@ export const NameContainer = styled.div`
 
 export const OverviewFlower1 = styled.img`
   position: absolute;
-  top: 16%;
-  width: 220px;
+  top: 21%;
+  width: 210px;
   left: -72px;
-  transform: rotate(14deg);
-  opacity: 0.5;
+  transform: rotate(22deg);
+  opacity: 0.4;
   z-index: 0;
 `
 
 export const OverviewFlower2 = styled.img`
   position: absolute;
-  bottom: 12%;
-  width: 180px;
-  right: -56px;
-  transform: rotate(-20deg);
-  opacity: 0.3;
+  bottom: 21%;
+  width: 200px;
+  right: -82px;
+  transform: rotate(-33deg);
+  opacity: 0.4;
   z-index: 0;
 `
 
 export const OverviewFlower3 = styled.img`
   position: absolute;
-  bottom: 4%;
-  width: 180px;
+  bottom: 7%;
+  width: 190px;
   left: -48px;
-  transform: rotate(20deg);
-  opacity: 0.15;
+  transform: rotate(60deg);
+  opacity: 0.35;
   z-index: 0;
 `

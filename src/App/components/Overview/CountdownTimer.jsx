@@ -18,13 +18,18 @@ export default function CountdownTimer() {
   })
 
   const handleChangeCountdown = useCallback((value) => {
-    const vietnamTimezoneOffset = 7 * 60 * 60 * 1000
-    const oneHourTime = 60 * 60 * 1000
-    const [days, hours, minutes, seconds] = moment(
-      value - vietnamTimezoneOffset - oneHourTime,
-    )
-      .format('D-H-m-s')
-      .split('-')
+    // value trong onChange của Statistic.Countdown chính là số mili-giây còn lại (remaining time in ms)
+    if (!value || value <= 0) {
+      setCountdownTime({ days: '0', hours: '0', minutes: '0', seconds: '0' })
+      return
+    }
+
+    const duration = moment.duration(value)
+    const days = Math.floor(duration.asDays()).toString()
+    const hours = duration.hours().toString()
+    const minutes = duration.minutes().toString()
+    const seconds = duration.seconds().toString()
+
     setCountdownTime({ days, hours, minutes, seconds })
   }, [])
 

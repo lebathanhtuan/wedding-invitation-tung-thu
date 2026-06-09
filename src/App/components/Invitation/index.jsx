@@ -5,10 +5,6 @@ import Container from 'src/components/Container'
 import T from 'src/components/Typography'
 
 import invitationBackground from 'src/assets/images/InvitationBackground.png'
-import invitationDecorate1 from 'src/assets/images/InvitationDecorate1.png'
-import invitationDecorate2 from 'src/assets/images/InvitationDecorate2.png'
-import invitationDecorate3 from 'src/assets/images/InvitationDecorate3.png'
-import invitationDecorate4 from 'src/assets/images/InvitationDecorate4.png'
 import InvitationDecorate5 from 'src/assets/images/InvitationDecorate5.png'
 
 import * as S from './styled'
@@ -18,10 +14,6 @@ function Invitation() {
 
   return (
     <S.InvitationWrapper id="invitation" $background={invitationBackground}>
-      {/* <S.InvitationDecorate1 src={invitationDecorate1} />
-      <S.InvitationDecorate2 src={invitationDecorate2} />
-      <S.InvitationDecorate3 src={invitationDecorate3} />
-      <S.InvitationDecorate4 src={invitationDecorate4} /> */}
       <S.InvitationDecorate5 src={InvitationDecorate5} />
       <Container>
         <S.InvitationContainer data-aos="fade-up">
@@ -83,7 +75,9 @@ function Invitation() {
             </T.Text>
           </Flex>
           <T.Text style={{ marginTop: 4 }}>{t('invitation.viDate')}</T.Text>
-          <T.Text>{t('invitation.schedule')}</T.Text>
+          <T.Text size="sm" align="center">
+            {t('invitation.schedule')}
+          </T.Text>
         </S.InvitationContainer>
       </Container>
     </S.InvitationWrapper>

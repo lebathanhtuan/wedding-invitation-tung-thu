@@ -6,7 +6,6 @@ export const ThanksWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 24px 16px;
-  height: 400px;
   background-image: url(${({ $background }) => $background});
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +35,6 @@ export const ThanksSticker = styled.img`
 
 export const ThanksContent = styled.div`
   margin-top: 16px;
-  padding-bottom: 36px;
   max-width: 700px;
   width: 100%;
   z-index: 2;
@@ -56,4 +54,10 @@ export const ThanksContent = styled.div`
   @media screen and (max-width: 568px) {
     max-width: 400px;
   }
+`
+
+export const ThanksChibi = styled.img`
+  margin: 8px auto 24px;
+  width: 90px;
+  height: auto;
 `

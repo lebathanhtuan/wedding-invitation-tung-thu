@@ -5,6 +5,7 @@ import Container from 'src/components/Container'
 import T from 'src/components/Typography'
 
 import thanksBackgroundImage from 'src/assets/images/ThanksBackground.png'
+import thanksChibiImage from 'src/assets/images/ThanksChibi.png'
 
 import * as S from './styled'
 
@@ -23,6 +24,7 @@ function Quote() {
               {t('thanks.content')}
             </T.Text>
           </S.ThanksContent>
+          <S.ThanksChibi src={thanksChibiImage} alt="Thanks Chibi" />
         </Flex>
       </Container>
     </S.ThanksWrapper>

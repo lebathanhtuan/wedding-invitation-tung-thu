@@ -11,13 +11,13 @@ import { WEDDING_DAY } from 'src/constants/wedding'
 import leftImage from 'src/assets/photos/DSC04646_crop.jpg'
 import middleImage from 'src/assets/photos/DSC04421_crop.jpg'
 import rightImage from 'src/assets/photos/DSC04436_crop.jpg'
-import photos from './photos'
 import loveStory1Image from 'src/assets/images/LoveStory1.png'
 import loveStory2Image from 'src/assets/images/LoveStory2.png'
 import loveStory3Image from 'src/assets/images/LoveStory3.png'
 import loveStory4Image from 'src/assets/images/LoveStory4.png'
 import loveStory5Image from 'src/assets/images/LoveStory5.png'
 import loveStory6Image from 'src/assets/images/LoveStory6.png'
+import { photos1 } from 'src/constants/photos'
 
 import * as S from './styled'
 
@@ -35,7 +35,7 @@ function LoveStory() {
       >
         <Row gutter={8}>
           <Col span={8}>
-            <S.ImageWrapper onClick={() => setLightboxActiveIndex(0)}>
+            <S.ImageWrapper onClick={() => setLightboxActiveIndex(13)}>
               <S.ImageContent src={leftImage} />
               <S.ImageLabel data-aos="fade-left">
                 {moment(WEDDING_DAY).format('DD')}
@@ -43,7 +43,7 @@ function LoveStory() {
             </S.ImageWrapper>
           </Col>
           <Col span={8}>
-            <S.ImageWrapper onClick={() => setLightboxActiveIndex(1)}>
+            <S.ImageWrapper onClick={() => setLightboxActiveIndex(4)}>
               <S.ImageContent src={middleImage} />
               <S.ImageLabel data-aos="fade-left">
                 {moment(WEDDING_DAY).format('MM')}
@@ -51,7 +51,7 @@ function LoveStory() {
             </S.ImageWrapper>
           </Col>
           <Col span={8}>
-            <S.ImageWrapper onClick={() => setLightboxActiveIndex(2)}>
+            <S.ImageWrapper onClick={() => setLightboxActiveIndex(6)}>
               <S.ImageContent src={rightImage} />
               <S.ImageLabel data-aos="fade-left">
                 {moment(WEDDING_DAY).format('YY')}
@@ -141,11 +141,11 @@ function LoveStory() {
           </S.LoveStoryCol>
         </Row>
       </Container>
-      {/* <PhotoLightbox
-        photos={photos}
+      <PhotoLightbox
+        photos={photos1}
         activeIndex={lightboxActiveIndex}
         onClose={() => setLightboxActiveIndex(-1)}
-      /> */}
+      />
     </S.LoveStoryWrapper>
   )
 }

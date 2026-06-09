@@ -9,6 +9,8 @@ export const IntentionWrapper = styled.div`
 `
 
 export const PaintImage = styled.img`
+  margin-top: 16px;
+  margin-right: 16px;
   width: 360px;
   height: auto;
   object-fit: cover;

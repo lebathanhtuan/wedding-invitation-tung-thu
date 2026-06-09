@@ -8,11 +8,11 @@ import PhotoLightbox from 'src/components/PhotoLightbox'
 import overviewBackgroundImage from 'src/assets/images/OverviewBackground.png'
 import overviewFlower1Image from 'src/assets/images/OverviewFlower1.png'
 import overviewFlower2Image from 'src/assets/images/OverviewFlower2.png'
-// import overviewFlower3Image from 'src/assets/images/OverviewFlower3.png'
+import overviewFlower3Image from 'src/assets/images/OverviewFlower3.png'
 import ticketImage from 'src/assets/images/Ticket.png'
 import letter1Image from 'src/assets/photos/DSC04933_crop.jpg'
 import letter2Image from 'src/assets/photos/DSC04586_crop.jpg'
-import photos from './photos'
+import { photos1 } from 'src/constants/photos'
 
 import * as S from './styled'
 import CountdownTimer from './CountdownTimer'
@@ -23,8 +23,6 @@ export default function App() {
   const { t } = useTranslation()
 
   const handleSealClick = useCallback(() => {
-    console.log('🚀 ~ App ~ handleSealClick:')
-
     if (containerRef.current) {
       const isCurrentlyOpen =
         containerRef.current.getAttribute('data-open') === 'true'
@@ -37,10 +35,10 @@ export default function App() {
           y: (rect.top + rect.height / 2) / window.innerHeight,
         }
         const colors = [
-          '#b87b64',
-          '#9a5f4a',
-          '#f0d5c8',
-          '#e8d5b7',
+          '#b8734a',
+          '#8c6f4f',
+          '#db9e82',
+          '#f0ead6',
           '#f8f2f0',
           '#fff',
         ]
@@ -86,14 +84,14 @@ export default function App() {
               <S.LetterImage
                 alt="Letter"
                 src={letter1Image}
-                onClick={() => setLightboxActiveIndex(0)}
+                onClick={() => setLightboxActiveIndex(22)}
               />
             </S.Letter1>
             <S.Letter2>
               <S.LetterImage
                 alt="Letter"
                 src={letter2Image}
-                onClick={() => setLightboxActiveIndex(1)}
+                onClick={() => setLightboxActiveIndex(10)}
               />
             </S.Letter2>
             <S.Letter3>
@@ -127,12 +125,12 @@ export default function App() {
       <CountdownTimer />
       <S.OverviewFlower1 src={overviewFlower1Image} />
       <S.OverviewFlower2 src={overviewFlower2Image} />
-      {/* <S.OverviewFlower3 src={overviewFlower3Image} /> */}
-      {/* <PhotoLightbox
-        photos={photos}
+      <S.OverviewFlower3 src={overviewFlower3Image} />
+      <PhotoLightbox
+        photos={photos1}
         activeIndex={lightboxActiveIndex}
         onClose={() => setLightboxActiveIndex(-1)}
-      /> */}
+      />
     </S.OverviewWrapper>
   )
 }

@@ -54,7 +54,7 @@ export const LeftDoor = styled(Door)`
   left: 0;
   transform: ${({ $open }) => ($open ? 'translateX(-250px)' : 'translateX(0)')};
   border-right: 33px solid transparent;
-  border-image: url(${({ $border }) => $border}) 58 round;
+  border-image: url(${({ $border }) => $border}) 58 repeat;
   border-color: #f0ead6;
 `
 
@@ -62,7 +62,7 @@ export const RightDoor = styled(Door)`
   right: 0;
   transform: ${({ $open }) => ($open ? 'translateX(250px)' : 'translateX(0)')};
   border-left: 33px solid transparent;
-  border-image: url(${({ $border }) => $border}) 58 round;
+  border-image: url(${({ $border }) => $border}) 58 repeat;
   border-color: #f0ead6;
 `
 

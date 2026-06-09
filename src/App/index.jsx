@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 import Header from 'src/layouts/Header'
 import MusicControl from 'src/components/MusicControl'
 import { useAudioPlayer } from 'src/hooks/useAudioPlayer'
-import weddingMusic from 'src/assets/musics/BeautifulInWhite.mp3'
+import weddingMusic from 'src/assets/musics/CuoiDi.mp3'
 import Overview from './components/Overview'
 import Invitation from './components/Invitation'
 import Couple from './components/Couple'
@@ -25,7 +25,7 @@ import * as S from './styled'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
-  // const { isPlaying, toggle } = useAudioPlayer(weddingMusic)
+  const { isPlaying, toggle } = useAudioPlayer(weddingMusic)
 
   const { t } = useTranslation()
 
@@ -80,7 +80,7 @@ function App() {
             <Thanks />
           </main>
           <FloatButton.Group shape="circle">
-            {/* <MusicControl isPlaying={isPlaying} onToggle={toggle} /> */}
+            <MusicControl isPlaying={isPlaying} onToggle={toggle} />
             <FloatButton.BackTop
               type="primary"
               tooltip={<div>{t('common.backToTop')}</div>}
