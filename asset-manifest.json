@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding-invitation-tung-thu/static/css/main.1e760a9c.css",
-    "main.js": "/wedding-invitation-tung-thu/static/js/main.625c1917.js",
+    "main.js": "/wedding-invitation-tung-thu/static/js/main.66776add.js",
     "static/js/453.b7de34e1.chunk.js": "/wedding-invitation-tung-thu/static/js/453.b7de34e1.chunk.js",
     "static/media/CuoiDi.mp3": "/wedding-invitation-tung-thu/static/media/CuoiDi.8e82f6a52fdec9a22116.mp3",
     "static/media/OverviewBackground.png": "/wedding-invitation-tung-thu/static/media/OverviewBackground.d03bb6712d5d9ac73daf.png",
@@ -157,11 +157,11 @@
     "static/media/EventTimeline3.png": "/wedding-invitation-tung-thu/static/media/EventTimeline3.a4d9355935b55a6e16f4.png",
     "index.html": "/wedding-invitation-tung-thu/index.html",
     "main.1e760a9c.css.map": "/wedding-invitation-tung-thu/static/css/main.1e760a9c.css.map",
-    "main.625c1917.js.map": "/wedding-invitation-tung-thu/static/js/main.625c1917.js.map",
+    "main.66776add.js.map": "/wedding-invitation-tung-thu/static/js/main.66776add.js.map",
     "453.b7de34e1.chunk.js.map": "/wedding-invitation-tung-thu/static/js/453.b7de34e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e760a9c.css",
-    "static/js/main.625c1917.js"
+    "static/js/main.66776add.js"
   ]
 }
