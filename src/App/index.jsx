@@ -30,15 +30,30 @@ function App() {
   const { t } = useTranslation()
 
   useEffect(() => {
-    // Tự động mở cửa sau khi component render lần đầu
-    // Sử dụng setTimeout để đảm bảo trình duyệt có thời gian áp dụng CSS trạng thái ban đầu (đóng)
-    // trước khi chuyển sang trạng thái mới (mở), tạo ra hiệu ứng animation.
-    const timer = setTimeout(() => {
-      setIsOpen(true)
-    }, 1500)
+    // Hàm kiểm tra xem toàn bộ tài nguyên (bao gồm ảnh, font, css, js) đã load xong chưa
+    const handleFullyLoaded = () => {
+      // Đợi thêm một nhịp nhỏ (khoảng 300ms) để mọi thứ thực sự render mượt mà trước khi mở cửa
+      setTimeout(() => {
+        setIsOpen(true)
+      }, 300)
+    }
 
-    // Cleanup function để gỡ bỏ timeout nếu component unmount trước khi chạy xong
-    return () => clearTimeout(timer)
+    if (document.readyState === 'complete') {
+      handleFullyLoaded()
+    } else {
+      window.addEventListener('load', handleFullyLoaded)
+    }
+
+    // Đảm bảo có một mốc thời gian tối đa phòng trường hợp có tài nguyên nào đó bị lỗi hoặc lag (Ví dụ CDN die)
+    const fallbackTimer = setTimeout(() => {
+      setIsOpen(true)
+    }, 5000)
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener('load', handleFullyLoaded)
+      clearTimeout(fallbackTimer)
+    }
   }, [])
 
   useEffect(() => {
